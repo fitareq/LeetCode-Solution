@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#include<D:\LeetCode-Solution\LinkedList\easy\705. Design HashSet.cpp>
 using namespace std;
 
 int main(){
