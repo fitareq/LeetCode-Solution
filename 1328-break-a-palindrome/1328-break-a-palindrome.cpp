@@ -1,15 +1,15 @@
 class Solution {
 public:
     string breakPalindrome(string palindrome) {
-        int n = palindrome.length();
-        for(int i = 0; i<n/2; i++){
+        //int n = palindrome.length();
+        for(int i = 0; i<palindrome.length()/2; i++){
             if(palindrome[i] != 'a'){
                 palindrome[i] = 'a';
                 return palindrome;
             }
         }
         
-        palindrome[n-1] = 'b';
-        return n<2?"":palindrome;
+        palindrome[palindrome.length()-1] = 'b';
+        return palindrome.length()<2?"":palindrome;
     }
 };
